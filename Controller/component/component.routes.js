@@ -44,7 +44,7 @@ const AddData = async (req, res) => {
 const UpdateData = async (req, res) => {
   try {
     // Update the UPDATE API COUNT
-   await apicountModel.findOneAndUpdate({}, { $inc: { UPDATEAPICOUNT: 1 } });n
+   await apicountModel.findOneAndUpdate({}, { $inc: { UPDATEAPICOUNT: 1 } });
 
     const { componentId } = req.params;
     if (!componentId)
